@@ -21,7 +21,7 @@ RUN apt-get -y install aria2 nmap traceroute
 
 # 3) install packages
 
-RUN pip install --no-cache-dir geopandas babypandas
+RUN pip install --no-cache-dir argparse opencv-python numpy torch torchvision
 
 # 4) change back to notebook user
 COPY /run_jupyter.sh /
